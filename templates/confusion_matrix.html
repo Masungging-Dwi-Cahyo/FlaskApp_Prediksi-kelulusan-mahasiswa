@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confusion Matrix</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_4.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>Confusion Matrix</h2>
+        <table border="2">
+            <tr>
+                <td></td>
+                <td>Prediksi Kelas 1</td>
+                <td>Prediksi Kelas 2</td>
+                <td>Prediksi Kelas 3</td>
+                <td>Prediksi Kelas 4</td>
+            </tr>           
+            {% for i in range(confusion_matrix.shape[0]) %}
+            <tr>
+                <td>Kelas Aktual {{ i+1 }}</td>
+                {% for j in range(confusion_matrix.shape[1]) %}
+                <td>{{ confusion_matrix[i][j] }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/home">Kembali ke Home</a>
+    </div>
+</body>
+</html>

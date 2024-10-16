@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    text-align: left;
+    padding: 15px;
+    margin: 20px auto;
+    background: 
+        linear-gradient(to bottom, rgba(173, 216, 230, 0.7) 0%, rgba(173, 216, 230, 0.7) 15%, rgba(255, 250, 205, 0.7) 50%);
+    border: 5px solid #333;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.897);
+    border-radius: 25px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px auto;
+    color: #2532e7;
+    font-size: 25px;
+}
+
+hr {
+    border: none;
+    border-top: 5px solid black;
+    margin-top: -6px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex: 1 1 45%;
+}
+
+label {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="text"],
+select {
+    flex: 0.6;
+    padding: 8px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.back-button,
+.prediction-buttons button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button {
+    width: 15%;
+    background-color: #dc3545;
+    color: #ffffff;
+    margin-left: 400px;
+}
+
+.back-button:hover {
+    background-color: #c82333;
+}
+
+.prediction-buttons {
+    display: flex;
+    gap: 3px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.prediction-buttons button {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-right: 400px;
+}
+
+.prediction-buttons button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Prediksi</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_3.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>HASIL PREDIKSI KELULUSAN MAHASISWA</h2>
+        <hr>
+        <p>{{ hasil }}</p>
+        <p>Akurasi model : {{ akurasi }}</p>
+        <div class="button-container">
+            <a href="/home"><< Lakukan Prediksi Lagi</a>
+            <a href="{{ matrix_route }}">Lihat Confusion Matrix >></a>
+        </div>
+    </div>
+</body>
+</html>

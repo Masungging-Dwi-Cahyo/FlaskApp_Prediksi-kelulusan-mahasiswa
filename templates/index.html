@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_2.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">           
+                <h2>APLIKASI PREDIKSI KELULUSAN MAHASISWA TEKNOLOGI BANK DARAH</h2>
+            </div>
+            <hr>
+            <form method="post">
+                <div class="form-group">
+                    <label for="JENIS KELAMIN">Jenis Kelamin</label>
+                    <select name="JENIS KELAMIN" required>
+                        <option value="" disabled selected>-- Pilih Jenis Kelamin --</option>
+                        <option value="1">Laki-laki</option>
+                        <option value="2">Perempuan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ASAL DAERAH">Asal Daerah</label>
+                    <select name="ASAL DAERAH" required>
+                        <option value="" disabled selected>-- Pilih Asal Daerah --</option>
+                        <option value="1">Yogyakarta</option>
+                        <option value="2">Luar Yogyakarta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="IPS_1">Nilai Indeks Prestasi Semester 1</label>
+                    <input type="text" name="IPS_1" placeholder="Skala 0.00 sampai 4.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="IPS_3">Nilai Indeks Prestasi Semester 3</label>
+                    <input type="text" name="IPS_3" placeholder="Skala 0.00 sampai 4.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="IPS_2">Nilai Indeks Prestasi Semester 2</label>
+                    <input type="text" name="IPS_2" placeholder="Skala 0.00 sampai 4.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="IPS_4">Nilai Indeks Prestasi Semester 4</label>
+                    <input type="text" name="IPS_4" placeholder="Skala 0.00 sampai 4.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="SEROLOGI GOLONGAN DARAH I">Nilai Serologi Golongan Darah I</label>
+                    <select name="SEROLOGI GOLONGAN DARAH I" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="SEROLOGI GOLONGAN DARAH III">Nilai Serologi Golongan Darah III</label>
+                    <select name="SEROLOGI GOLONGAN DARAH III" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="SEROLOGI GOLONGAN DARAH II">Nilai Serologi Golongan Darah II</label>
+                    <select name="SEROLOGI GOLONGAN DARAH II" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="SEROLOGI GOLONGAN DARAH IV">Nilai Serologi Golongan Darah IV</label>
+                    <select name="SEROLOGI GOLONGAN DARAH IV" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="INFEKSI MENULAR LEWAT TRANSFUSI DARAH I">Nilai Infeksi Menular Lewat Transfusi Darah I</label>
+                    <select name="INFEKSI MENULAR LEWAT TRANSFUSI DARAH I" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="INFEKSI MENULAR LEWAT TRANSFUSI DARAH III">Nilai Infeksi Menular Lewat Transfusi Darah III</label>
+                    <select name="INFEKSI MENULAR LEWAT TRANSFUSI DARAH III" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="INFEKSI MENULAR LEWAT TRANSFUSI DARAH II">Nilai Infeksi Menular Lewat Transfusi Darah II</label>
+                    <select name="INFEKSI MENULAR LEWAT TRANSFUSI DARAH II" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="INFEKSI MENULAR LEWAT TRANSFUSI DARAH IV">Nilai Infeksi Menular Lewat Transfusi Darah IV</label>
+                    <select name="INFEKSI MENULAR LEWAT TRANSFUSI DARAH IV" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="PENYADAPAN DARAH">Nilai Penyadapan Darah</label>
+                    <select name="PENYADAPAN DARAH" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>   
+                <div class="form-group">
+                    <label for="KOMPONEN DARAH">Nilai Komponen Darah</label>
+                    <select name="KOMPONEN DARAH" required>
+                        <option value="" disabled selected>-- Pilih Nilai --</option>
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">E</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="back-button" onclick="location.href='/'">Keluar</button>
+                    <div class="prediction-buttons">
+                        <button type="submit" formaction="/predict_nbc">Prediksi NBC</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
